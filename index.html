@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+  <!--page metadata-->
+  <head>
+     <title>HTML Forms | Basic User Inputs</title>
+     <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+     <h1>HTML Forms: Basic User Inputs</h1>
+     <h2>Form Elements (Simplified)</h2>
+
+     <!--Elements Table START-->
+     <table class="elements">
+         <thead>
+             <tr>
+                 <th class="column1">Name</th>
+                 <th class="column2">Syntax</th>
+                 <th>Interactive Example</th>
+                 <th class="column4">Description</th>
+                 <th>Closing Tag</th>
+             </tr>
+          </thead>
+          
+          <tbody>
+
+             <!--Form Row-->
+             <tr class="form">
+                 <td class="column1">Form</td>
+                 <td>
+                     <span class="code">&lt;form&gt;</span>
+                </td>
+                 <td class="column3">-</td>
+                 <td>Containing element for generated form</td>
+                 <td>
+                     Yes
+                     <br>
+                     <span class="code">&lt;/form&gt;</span>
+                </td>
+             </tr>
+
+             <!--Label Row-->
+             <tr class="label">
+                 <td class="column1">Label</td>
+                 <td>
+                     <span class="code">&lt;label&gt;</span>
+                 </td>
+                 <td class="column3">-</td>
+                 <td>
+                     Provides identification for specific <span class="code">&lt;input&gt;</span>s based on their <span class="code">id</span> attribue paired with a matching <span class="code">for</span> attribute within the opening <span class="code">&lt;label&gt;</span> element
+                 </td>
+                 <td>
+                     Yes
+                     <br>
+                     <span class="code">&lt;/label&gt;<span></span>
+                 </td>
+             </tr>
+
+             <!--Checkbox Row-->
+             <tr class="checkbox">
+                 <td class="column1">Checkbox</td>
+                 <td>
+                     <span class="code">&lt;input type="checkbox"&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input type="checkbox">
+                 </td>
+                 <td>Renders a clickable checkbox</td>
+                 <td>No</td>
+             </tr>
+
+             <!--Radio Row-->
+             <tr class="radio">
+                 <td class="column1">Radio Button</td>
+                 <td>
+                     <span class="code">&lt;input type="radio"&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input name="example" type="radio">
+                     <input name="example" type="radio">
+                 </td>
+                 <td>
+                    Multiple radio buttons that share the same <span class="code">name</span> attribute will render a selection of radio buttons of which only a single option can be selected
+                </td>
+                <td>No</td>                 
+             </tr>
+
+             <!--Range Row-->
+             <tr class="range">
+                 <td class="column1">Range</td>
+                 <td>
+                     <span class="code">&lt;input type="range"&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input type="range">
+                 </td>
+                 <td>Renders a slider based on specified range of values provided</td>
+                 <td>No</td>
+             </tr>
+
+             <!--Text Row-->
+             <tr class="text">
+                 <td class="column1">Text</td>
+                 <td>
+                     <span class="code">&lt;input type="text"&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input type="text" value="Example">
+                 </td>
+                 <td>Renders a space for user to input text</td>
+                 <td>No</td>
+             </tr>
+
+             <!--Password Row-->
+             <tr class="password">
+                 <td class="column1">Password</td>
+                 <td>
+                     <span class="code">&lt;input type="password"&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input type="password" value="example">
+                 </td>
+                 <td>Renders a space for users to input values that are automatically sensored</td>
+                 <td>No</td>
+             </tr>
+
+             <!--Number Row-->
+             <tr class="number">
+                 <td class="column1">Number</td>
+                 <td>
+                     <span class="code">&lt;input type="number"&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input type="number" value="123">
+                 </td>
+                 <td>Renders space for user to input number only
+                     <br>
+                     Note: up/down selector is automatically generated when user interacts with element</td>
+                 <td>No</td>
+             </tr>
+
+             <!--Data List Row-->
+             <tr class="datalist">
+                 <td class="column1">Data List</td>
+                 <td>
+                     <span class="code">&lt;datalist&gt;</span>
+                     <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="code">&lt;option&gt;</span>
+                     <br>
+                     <span class="code">&lt;/datalist&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input list="example">
+                     <datalist id="example">
+                        <option value="Example">
+                     </datalist>
+                 </td>
+                 <td>
+                     Renders a drop-down list populated with <span class=code>&lt;option&gt;</span>s
+                     <br>
+                     Note: user can input text and numbers manually as well as choosing an <span class=code>&lt;option&gt;</span>
+                 </td>
+                 <td>
+                     Yes
+                     <br>
+                     <span class="code">&lt;datalist&gt;</span>
+                 </td>
+             </tr>
+
+             <!--Select Row-->
+             <tr class="select">
+                 <td class="column1">Select</td>
+                 <td>
+                     <span class="code">&lt;select&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code">&lt;option&gt;&lt;/option&gt;</span>
+                        <br>
+                        <span class="code">&lt;/select&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <select>
+                        <option></option>
+                        <option>Example</option>
+                     </select>
+                 </td>
+                 <td>Renders a drop down menu populated with value(s) specified between the <span class="code">&lt;option&gt;</span> elements</td>
+                 <td>
+                     Yes
+                     <br>
+                     <span class="code">&lt;/select&gt;</span>
+                 </td>
+             </tr>
+
+             <!--Text Area Row-->
+             <tr class="textarea">
+                 <td class="column1">Text Area</td>
+                 <td>
+                     <span class="code">&lt;textarea&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <textarea></textarea>
+                 </td>
+                 <td>Renders area for user to input free-text
+                 </td>
+                 <td>
+                     Yes
+                     <br>
+                     <span class="code">&lt;/textarea&gt;</span>
+                 </td>
+             </tr>
+
+             <!--Submit Row-->
+             <tr class="submit">
+                 <td class="column1">Submit</td>
+                 <td>
+                     <span class="code">&lt;input type="submit"&gt;</span>
+                 </td>
+                 <td class="column3">
+                     <input type="submit">
+                 </td>
+                 <td>
+                     Renders a clickable "Submit" button that executes the action of the <span class="code">&lt;form&gt;</span> as per the <span class="code">action</span> and <span class="code">method</span> attributes within the opening tag
+                 </td>
+                 <td>No</td>
+             </tr>
+         </tbody>
+      </table>
+      <!--Elements Table END-->
+
+      <p>
+         Reference: <a href="https://www.codecademy.com/learn/paths/learn-html/tracks/learn-html/modules/learn-html-forms/cheatsheet" target="_blank">CodeCademy Lean HTML Forms Cheatsheet</a>
+         <br>
+         Please note the above table contains heavily simplified information
+         <br>
+         Please study reference material for further instruction
+      </p>
+  </body>
+
+</html>
